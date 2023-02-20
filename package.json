@@ -2,6 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "This project compiles 5 console games to train your brain.",
+  "main": "index.js",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
