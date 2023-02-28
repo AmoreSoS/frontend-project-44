@@ -2,12 +2,12 @@
 [![Actions Status](https://github.com/AmoreSoS/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/AmoreSoS/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/AmoreSoS/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/1a69d57f74e98f0d6f9f/maintainability" /></a>
 
-# Проект "Игры разума":
+# Project "Mind Games":
 
-## Описание проекта
-__"Игры разума"__ : это проект состоящий из 5 консольных игр, для тренировки вашего мозга. Каждая игра задает по 3 вопроса, на которые нужо дать правильные ответы. Если вы ответили на все вопросы, считается что вы прошли игру. В случае неправильного ответа игра завершится и вам будет предложено попробовать еще раз.
+## Description of the project
+__"Mind Games"__ : is a project of 5 console games to train your brain. Each game asks 3 questions, which must be answered correctly. If you answered all the questions, you are considered to have completed the game. If you answer incorrectly, the game will end and you will be asked to try again.
 
-### Как установить:
+### How to install:
 
 ```
 npm i
@@ -16,63 +16,60 @@ npm i
 npm link
 ```
 
-## Как запускать:
+## How to run:
 
-запускает игру "Проверка на чётность"
+starts the game "Even Check"
 
 ```
-brain-even
+brain even
 ```
 
-запускает игру "Калькулятор"
+starts the game "Calculator"
 
 ```
 brain-calc
 ```
 
-запускает игру "Наибольший общий делитель"
+starts the "Greatest Common Divisor" game
 
 ```
 brain-gcd
 ```
 
-запускает игру "Арифметическая прогрессия"
+starts the game "Arithmetic progression"
 
 ```
-brain-progression
+brain progression
 ```
 
-запускает игру "Простое ли число?"
+starts the game "Is it a prime number?"
 
 ```
 brain-prime
 ```
-## Игра: "Проверка на четность"
-### Описание игры:
-Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
-### Запуск игры: __"brain-even"__
+## Game: "Even Check"
+### Description of the game:
+The user is shown a random number. And he needs to answer yes if the number is even, or no if it is odd.
+### Game start: __"brain-even"__
+
+## Game: "Calculator"
+### Description of the game:
+The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.
+### Run game: __"brain-calc"__
 
 
-
-## Игра: "Калькулятор"
-### Описание игры:
-Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
-### Запуск игры: __"brain-calc"__
-
-
-## Игра: "НОД"
-### Описание игры:
-Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
-### Запуск игры: __"brain-gcd"__
+## Game: "Greatest Common Divisor"
+### Description of the game:
+The user is shown two random numbers, for example 25 50. The user must calculate and enter the greatest common divisor of these numbers.
+### Run game: __"brain-gcd"__
 
 
-## Игра: "Арифметическая прогрессия"
-### Описание игры:
-Пользователю показывается ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
-### Запуск игры: __"brain-progression"__
+## Game: "Arithmetic progression"
+### Description of the game:
+The user is shown a series of numbers forming an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
+### Run game: __"brain-progression"__
 
-
-## Игра: "Простое ли число?"
-### Описание игры:
-Пользователю показывается случайное число. И ему нужно ответить yes, если число простое, или no — если не простое.
-### Запуск игры: __"brain-prime"__
+## Game: "Is it a prime number?"
+### Description of the game:
+The user is shown a random number. And he needs to answer yes if the number is prime, or no if it is not prime.
+### Run game: __"brain-prime"__

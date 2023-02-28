@@ -1,33 +1,38 @@
-#!/usr/bin/env node
-import { getRandomNumber, getRandomIndex } from '../utils.js';
+import runGame from '../index.js';
+import getRandomNumInRange from '../utils.js';
 
 const description = 'What is the result of the expression?';
-const operators = ['+', '-', '*'];
-const minRange = 0;
-const maxRange = 50;
 
-const calculate = (x, y, operator) => {
+const getMathOperator = () => {
+  const operators = ['+', '-', '*'];
+  const randomIndex = getRandomNumInRange(0, operators.length - 1);
+  return operators[randomIndex];
+};
+
+const calculateExpression = (firstNum, secondNum, operator) => {
   switch (operator) {
     case '+':
-      return x + y;
+      return firstNum + secondNum;
     case '-':
-      return x - y;
+      return firstNum - secondNum;
     case '*':
-      return x * y;
+      return firstNum * secondNum;
     default:
-      throw new Error(`There is no such operator like '${operator}'!`);
+      throw new Error(`Unexpected operator '${operator}'`);
   }
 };
 
 const generateRound = () => {
-  const number1 = getRandomNumber(minRange, maxRange);
-  const number2 = getRandomNumber(minRange, maxRange);
-  const operator = operators[getRandomIndex(operators)];
-  const question = `${number1} ${operator} ${number2}`;
-  const correctAnswer = calculate(number1, number2, operator).toString();
-  return [question, correctAnswer];
+  const firstNum = getRandomNumInRange(1, 25);
+  const secondNum = getRandomNumInRange(1, 25);
+  const operator = getMathOperator();
+
+  const question = `${firstNum} ${operator} ${secondNum}`;
+  const answer = calculateExpression(firstNum, secondNum, operator);
+
+  return [question, answer];
 };
 
 export default () => {
-  run(description, generateRound);
+  runGame(description, generateRound);
 };
