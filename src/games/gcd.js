@@ -1,7 +1,6 @@
 import runGame from '../index.js';
 import getRandomNumInRange from '../utils.js';
 
-
 const description = 'Find the greatest common divisor of given numbers.';
 
 const calculateGcd = (num1, num2) => {
