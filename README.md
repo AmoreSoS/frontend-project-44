@@ -9,7 +9,7 @@ __"Mind Games"__ : is a project of 5 console games to train your brain. Each gam
 
 ### How to install:
 
-git clone https://github.com/AmoreSoS/frontend-project-44
+git clone https://github.com/AmoreSoS/frontend-project-44.git
 ```
 npm i
 ```
